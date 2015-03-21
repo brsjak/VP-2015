@@ -1,0 +1,9 @@
+c:\users\damjan\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\bin\Debug\ShoppingCart.exe
+c:\users\damjan\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\bin\Debug\ShoppingCart.pdb
+c:\users\damjan\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csprojResolveAssemblyReference.cache
+c:\users\damjan\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.Properties.Resources.resources
+c:\users\damjan\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.csproj.GenerateResource.Cache
+c:\users\damjan\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.exe
+c:\users\damjan\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.pdb
+C:\Users\Damjan\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.NewProduct.resources
+C:\Users\Damjan\documents\visual studio 2013\Projects\ShoppingCart\ShoppingCart\obj\Debug\ShoppingCart.ShoppingCart.resources
