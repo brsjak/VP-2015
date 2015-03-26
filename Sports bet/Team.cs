@@ -2,12 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading.Tasks;
 
-namespace ShoppingCart
-{
-    public class Product
-    {
-        /*
+namespace SportsBet
+{       /*
         ** author: Damjan Miloshevski
         ** contact: d.miloshevski@gmail.com;
         ** skype: damjan.milosevski
@@ -15,22 +13,20 @@ namespace ShoppingCart
         ** web: https://www.facebook.com/damjan.miloshevski
                 http://miloshevski.us.to/
       */
+    public class Team
+    {
         public string Name { get; set; }
-        public string Category { get; set; }
-        public float Price { get; set; }
+        public string Country { get; set; }
 
-        public Product() { }
-
-        public Product(string name, string category, float price)
+        public Team() { }
+        public Team(string name, string country)
         {
             Name = name;
-            Category = category;
-            Price = price;
+            Country = country;
         }
-
         public override string ToString()
         {
-            return string.Format("{0}", Name);
+            return string.Format("{0}-{1}", Name, Country);
         }
     }
 }
