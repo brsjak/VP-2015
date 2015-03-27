@@ -101,7 +101,7 @@ namespace Airports
         {
             foreach (Airport i in lstAirports.Items)
             {
-                if (i.Short.Equals(a.Short)) return true;
+                if (i.Short.Equals(a.Short) || i.Name.Equals(a.Name)) return true;
             }
             return false;
         }
