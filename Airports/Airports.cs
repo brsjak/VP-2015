@@ -74,9 +74,12 @@ namespace Airports
 
         private void lstAirports_SelectedIndexChanged(object sender, EventArgs e)
         {
-            btnDeleteAirport.Enabled = lstAirports.SelectedIndex != -1;
-            btnAddDestination.Enabled = lstAirports.SelectedIndex != -1;
-            loadDestinations();
+            if (lstAirports.SelectedIndex != -1)
+            {
+                btnDeleteAirport.Enabled = true;
+                btnAddDestination.Enabled = true;
+                loadDestinations();
+            }
         }
 
         private void btnAddAirport_Click(object sender, EventArgs e)
@@ -133,7 +136,7 @@ namespace Airports
         {
             if (btnDeleteAirport.Enabled)
             {
-                DialogResult result = MessageBox.Show("Дали сте сигурни дека сакате да го избришете овој аеродром?","Внимание!",
+                DialogResult result = MessageBox.Show("Дали сте сигурни дека сакате да го избришете овој аеродром?", "Внимание!",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Warning);
                 if (result == DialogResult.Yes)
                 {
