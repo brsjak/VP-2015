@@ -7,7 +7,14 @@ using System.Threading.Tasks;
 namespace Busses
 {
     public class Bus
-    {
+    { /*
+        ** author: Damjan Miloshevski
+        ** contact: d.miloshevski@gmail.com;
+        ** skype: damjan.milosevski
+        ** phone: +38978566409;
+        ** web: https://www.facebook.com/damjan.miloshevski
+                http://miloshevski.us.to/
+      */
         public string Name { get; set; }
         public string LicencePlate { get; set; }
         public bool IsLocal { get; set; }

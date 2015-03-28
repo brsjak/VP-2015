@@ -17,7 +17,7 @@ namespace Busses
       */
         public string Name { get; set; }
         public int StartHour { get; set; }
-        public int StarMinute { get; set; }
+        public int StartMinute { get; set; }
         public float Price { get; set; }
 
         public Line() { }
@@ -25,13 +25,13 @@ namespace Busses
         {
             Name = name;
             StartHour = startHour;
-            StarMinute = startMinute;
+            StartMinute = startMinute;
             Price = price;
         }
         public override string ToString()
         {
 
-            return string.Format("{0:00}:{1:00} - {2} - {3} Ден.", StartHour, StarMinute, Name, Price);
+            return string.Format("{0:00}:{1:00} - {2} - {3} Ден.", StartHour, StartMinute, Name, Price);
         }
     }
 }
