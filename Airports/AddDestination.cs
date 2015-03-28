@@ -20,7 +20,7 @@ namespace Airports
 
         private void tbNameDestination_Validating(object sender, CancelEventArgs e)
         {
-            if (tbNameDestination.Text.Trim().Length > 0)
+            if (string.IsNullOrWhiteSpace(tbNameDestination.Text))
             {
                 errorDestinationName.SetError(tbNameDestination, null);
             }

@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace Airports
-{   /*
+{     /*
         ** author: Damjan Miloshevski
         ** contact: d.miloshevski@gmail.com;
         ** skype: damjan.milosevski
@@ -27,7 +27,7 @@ namespace Airports
 
         private void tbCity_Validating(object sender, CancelEventArgs e)
         {
-            if (tbCity.Text.Trim().Length > 0)
+            if (string.IsNullOrWhiteSpace(tbCity.Text))
             {
                 errorCity.SetError(tbCity, null);
             }
@@ -40,7 +40,7 @@ namespace Airports
 
         private void tbName_Validating(object sender, CancelEventArgs e)
         {
-            if (tbName.Text.Trim().Length > 0)
+            if (string.IsNullOrWhiteSpace(tbName.Text))
             {
                 errorName.SetError(tbName, null);
             }
