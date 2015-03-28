@@ -94,10 +94,7 @@ namespace Airports
                         MessageBoxIcon.Error);
                     return;
                 }
-                else
-                {
-                    lstAirports.Items.Add(na.Airport);
-                }
+                else { lstAirports.Items.Add(na.Airport); }
             }
         }
         public bool containsAirport(Airport a)
@@ -116,7 +113,7 @@ namespace Airports
             Airport a = lstAirports.SelectedItem as Airport;
             if (a != null && a.Destinations.Count > 0)
             {
-                Destination najskapa = a.Destinations[0];
+                Destination najskapa = a.Destinations[0];//prvata destinacija e najskapa na pocetok
                 float vkupnoDistanca = 0;
                 foreach (Destination destination in a.Destinations)
                 {
@@ -142,10 +139,7 @@ namespace Airports
                 {
                     lstAirports.Items.RemoveAt(lstAirports.SelectedIndex);
                 }
-                else
-                {
-                    return;
-                }
+                else { return; }
             }
         }
 
