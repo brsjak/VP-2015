@@ -7,7 +7,14 @@ using System.Threading.Tasks;
 namespace CashAccount
 {
     public class AccountItem
-    {
+    {/*
+        ** author: Damjan Miloshevski
+        ** contact: d.miloshevski@gmail.com;
+        ** skype: damjan.milosevski
+        ** phone: +38978566409;
+        ** web: https://www.facebook.com/damjan.miloshevski
+                http://miloshevski.us.to/
+      */
         public Product Product { get; set; }
         public int Quantity { get; set; }
 
