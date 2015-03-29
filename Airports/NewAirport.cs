@@ -27,7 +27,7 @@ namespace Airports
 
         private void tbCity_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(tbCity.Text))
+            if (!string.IsNullOrWhiteSpace(tbCity.Text))
             {
                 errorCity.SetError(tbCity, null);
             }
@@ -40,7 +40,7 @@ namespace Airports
 
         private void tbName_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(tbName.Text))
+            if (!string.IsNullOrWhiteSpace(tbName.Text))
             {
                 errorName.SetError(tbName, null);
             }
