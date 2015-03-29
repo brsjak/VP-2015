@@ -27,14 +27,14 @@ namespace Busses
 
         private void tbDestinationName_Validating(object sender, CancelEventArgs e)
         {
-            if (!string.IsNullOrWhiteSpace(tbDestinationName.Text))
-            {
-                errorName.SetError(tbDestinationName, null);
-            }
-            else
+            if (string.IsNullOrWhiteSpace(tbDestinationName.Text))
             {
                 e.Cancel = true;
                 errorName.SetError(tbDestinationName, "Името на линијата е задолжително!");
+            }
+            else
+            {
+                errorName.SetError(tbDestinationName, null);
             }
         }
 
