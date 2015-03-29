@@ -27,7 +27,7 @@ namespace Busses
 
         private void tbDestinationName_Validating(object sender, CancelEventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(tbDestinationName.Text))
+            if (!string.IsNullOrWhiteSpace(tbDestinationName.Text))
             {
                 errorName.SetError(tbDestinationName, null);
             }

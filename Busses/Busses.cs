@@ -144,7 +144,11 @@ namespace Busses
                 if (lstBusses.SelectedIndex != -1)
                 {
                     Bus b = lstBusses.SelectedItem as Bus;
-                    if (response == DialogResult.OK) { b.AddLine(nl.Line); loadLines(); }
+                    if (response == DialogResult.OK)
+                    {
+                        b.AddLine(nl.Line);
+                        loadLines();
+                    }
                 }
             }
         }
