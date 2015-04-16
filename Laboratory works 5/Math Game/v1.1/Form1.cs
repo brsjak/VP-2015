@@ -236,7 +236,7 @@ namespace MathGame
             foreach (object obj in Players)
             {
                 Player p = obj as Player;
-                i += 1;
+                i++;
                 if (Players.Count > 0)
                 {
                     Players = Players.OrderByDescending(Player => Player.Points).ToList();

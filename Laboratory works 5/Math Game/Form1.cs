@@ -24,6 +24,7 @@ namespace Timer
         public Player Player { get; set; }
         private int counter = 59;
         private int points = 0;
+        int i = 0;
         public Form1()
         {
             InitializeComponent();
@@ -247,8 +248,9 @@ namespace Timer
                 Player p = obj as Player;
                 if (Players.Count > 0)
                 {
+                    i++;
                     Players = Players.OrderByDescending(Player => Player.Points).ToList();
-                    sb.Append(Players.IndexOf(p).ToString()+". ");
+                    sb.Append(i.ToString()+". ");
                     sb.Append(p.ToString());
                     sb.Append("\n");
                     MessageBox.Show(sb.ToString(), "Најдобри играчи!", MessageBoxButtons.OK, MessageBoxIcon.Information);
