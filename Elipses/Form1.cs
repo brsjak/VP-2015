@@ -82,7 +82,7 @@ namespace Elipses
             openFileDialog.Title = "Open an Elipses doc file";
             if (openFileDialog.ShowDialog() == System.Windows.Forms.DialogResult.OK)
             {
-                openFileDialog.FileName = FileName;
+                FileName = openFileDialog.FileName;
                 try
                 {
                     using (FileStream filestream = new FileStream(FileName, FileMode.Open))

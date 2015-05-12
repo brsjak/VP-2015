@@ -147,7 +147,7 @@ namespace DrawLines
             openFileDialog.Title = "Open Lines doc file";
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
-                openFileDialog.FileName = FileName;
+                FileName = openFileDialog.FileName;
                 try
                 {
                     using (FileStream filestream = new FileStream(FileName, FileMode.Open))
