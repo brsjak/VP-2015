@@ -115,10 +115,13 @@ namespace BlowingBallons
         }
         private void Form1_MouseClick(object sender, MouseEventArgs e)
         {
-            Balloon b = new Balloon(Convert.ToInt32(rand.Next(20, 30)), e.Location);
-            Scene.AddBalloon(b);
-            IsChanged = true;
-            Invalidate(true);
+            if (e.Button == System.Windows.Forms.MouseButtons.Left)
+            {
+                Balloon b = new Balloon(Convert.ToInt32(rand.Next(20, 30)), e.Location);
+                Scene.AddBalloon(b);
+                IsChanged = true;
+                Invalidate(true);
+            }
         }
 
         private void Form1_Paint(object sender, PaintEventArgs e)
